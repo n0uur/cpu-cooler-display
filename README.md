@@ -39,11 +39,16 @@ The protocol was first documented by the Linux drivers
 
 ## Install
 
+Download `CoolerDisplay-<version>-win-x64.zip` from
+[Releases](https://github.com/n0uur/cpu-cooler-display/releases). It is self-contained, so .NET does
+not need to be installed. Extract it, then in an elevated PowerShell inside the extracted folder:
+
 ```powershell
-dotnet publish -c Release -o publish          # as your normal user
-# then, in an elevated PowerShell:
 .\install.ps1 [-Fahrenheit] [-Load] [-RemoveVendor]
 ```
+
+To build from source instead (.NET 8 SDK), run `dotnet publish -c Release -o publish` in the repo, then
+run `install.ps1` the same way.
 
 `install.ps1`:
 
