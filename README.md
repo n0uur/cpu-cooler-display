@@ -1,6 +1,6 @@
 # CoolerDisplay
 
-![Snowman MT880 display showing 52 °C and 68 W (vendor render, edited to the no-RGB version)](docs/cooler.webp)
+![Snowman MT880 display cycling through live CPU temperature and power readings (vendor render, edited to the no-RGB version)](docs/cooler.gif)
 
 Replacement for the vendor "CPU TEMP Monitor" (Shenzhen Shinetek) app that drives the two-row 7-segment
 display on the CPU cooler. The vendor app reads sensors through LibreHardwareMonitor 0.9.4 and its
