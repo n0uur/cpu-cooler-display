@@ -1,8 +1,8 @@
 # CoolerDisplay
 
-![Snowman MT880 display cycling through live CPU temperature and power readings (vendor render, edited to the no-RGB version)](docs/cooler.gif)
+![Snowman MT880 display showing live CPU temperature and power](docs/cooler.gif)
 
-Replacement for the vendor "CPU TEMP Monitor" (Shenzhen Shinetek) app that drives the two-row 7-segment
+Replacement for the vendor "CPU TEMP Monitor" app that drives the two-row 7-segment
 display on the CPU cooler. The vendor app reads sensors through LibreHardwareMonitor 0.9.4 and its
 **WinRing0** driver, which Microsoft Defender flags as `VulnerableDriver:WinNT/Winring0`.
 CoolerDisplay uses LibreHardwareMonitor 0.9.6, which reaches the hardware through the signed, sandboxed
@@ -16,12 +16,9 @@ CoolerDisplay uses LibreHardwareMonitor 0.9.6, which reaches the hardware throug
 
 ## Hardware
 
-- **Cooler:** Snowman (冰曼) MT880: dual-tower air cooler, 8 heat pipes, nano black, no RGB, digital-display version.
-- **Listing name:** `MT880纳米黑无灯【8管】`; store variant `[8热管]MT880-V4D黑色无灯-数显版`.
-- **Bought from:** Snowman's official store (冰曼CPU散热器) on Taobao/Tmall.
+- **Cooler:** Snowman (冰曼) MT880, digital-display version.
 - **Display controller:** USB HID `1A2C:4984`, the same controller other Snowman display coolers and the
   Rise Mode Temp 6 use.
-- **Vendor software:** CPU TEMP Monitor 1.0.1.3, which this project replaces.
 
 ## Display protocol
 
@@ -38,8 +35,7 @@ collection (usage page `0xFF01`, interface `MI_01`, collection `COL07`) with a 6
 
 The protocol was first documented by the Linux drivers
 [Anatdx/cputmpmonitor](https://github.com/Anatdx/cputmpmonitor) and
-[matheus-paula/risemode-temp6-driver](https://github.com/matheus-paula/risemode-temp6-driver), and was
-confirmed on this cooler with `CoolerDisplay test 123 45`.
+[matheus-paula/risemode-temp6-driver](https://github.com/matheus-paula/risemode-temp6-driver).
 
 ## Install
 
